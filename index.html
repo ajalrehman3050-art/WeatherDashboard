@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="oo.css">
+</head>
+
+<body>
+
+    <form class="weatherForm">
+        <input type="text" class="cityInput" placeholder="Enter city">
+        <button type="submit">Get Weather</button>
+    </form>
+
+    <!-- Loading message -->
+    <p class="loading" style="display: none;">Loading weather...</p>
+
+    <!-- Current Weather -->
+    <div class="card" style="display: none;"></div>
+
+    <!-- 5-Day Forecast -->
+    <div class="forecast">
+        <h2>5-Day Forecast</h2>
+        <div class="forecastList"></div>
+    </div>
+
+    <!-- Favorites -->
+    <div class="favorites">
+        <h2>⭐ Favorite Cities</h2>
+        <ul class="favoritesList"></ul>
+    </div>
+
+    <script src="ok.js"></script>
+
+</body>
+
+</html>
